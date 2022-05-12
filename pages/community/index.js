@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from '../../components/Community/Banner'
+import Banner from "../../components/Community/Banner";
 import Cart from "../../components/Community/Cart";
 import SocialUnit from "../../components/Community/SocialUnit";
 import Features from "../../components/Community/Features";
@@ -9,15 +9,15 @@ import SellerFooter from "../../components/BecomeASeller/SellerFooter";
 
 const Coummunity = () => {
   return (
-    <div>
-      <Banner/>
-        <Cart/>
-        <SocialUnit/>
-        <Features/>
-        <Building/>
-      <Testimonial/>
-      <SellerFooter/>
-    </div>
+    <main>
+      <Banner />
+      <Cart />
+      <SocialUnit />
+      <Features />
+      <Building />
+      <Testimonial />
+      <SellerFooter />
+    </main>
   );
 };
 

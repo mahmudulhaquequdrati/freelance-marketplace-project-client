@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
 
 // import required modules
-import { Pagination } from "swiper";
+// import { Pagination } from "swiper";
 import FeatureSingle from "./FeatureSingle";
 import Link from "next/link";
 
@@ -34,9 +34,7 @@ export default function Feature() {
 
         <div className="mt-6 md:mt-0 lg:mt-0">
           <Link href="/gig_search">
-            <a
-              className="border-2 border-[#ec4899] text-gray-800  rounded-md py-4 px-6 hover:scale-105 hover:text-[#ec4899] transition-all duration-300 ease-linear text-lg font-medium"
-            >
+            <a className="border-2 border-[#ec4899] text-gray-800  rounded-md py-4 px-6 hover:scale-105 hover:text-[#ec4899] transition-all duration-300 ease-linear text-lg font-medium">
               Explore Now
             </a>
           </Link>
@@ -59,7 +57,6 @@ export default function Feature() {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
         className="mySwiper"
       >
         {features.map((feature) => (

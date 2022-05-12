@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { message } from "antd";
 import axios, { Axios } from "axios";
 import {
@@ -18,7 +19,13 @@ import { notification } from "antd";
 app();
 
 const useFirebase = () => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState({
+    providerId: "firebase",
+    displayName: "name",
+    email: "email@email.com",
+    photoURL: "abc",
+  });
+  // console.log(user);
   const [userStatus, setUserStatus] = useState("");
   const [loading, setIsLoadind] = useState(true);
   const [error, setError] = useState("");
@@ -284,33 +291,33 @@ const useFirebase = () => {
       .catch((err) => console.log(err));
   }, [user?.email]);
 
-  useEffect(() => {
-    axios
-      .get(
-        `${process.env.NEXT_PUBLIC_API_URL}/users/email/${user?.email}`,
-        configJson
-      )
-      .then(
-        (response) => {
-          setThisUser(response?.data?.result);
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
-  }, [configJson, user?.email]);
+  // useEffect(() => {
+  //   axios
+  //     .get(
+  //       `${process.env.NEXT_PUBLIC_API_URL}/users/email/${user?.email}`,
+  //       configJson
+  //     )
+  //     .then(
+  //       (response) => {
+  //         setThisUser(response?.data?.result);
+  //       },
+  //       (error) => {
+  //         console.log(error);
+  //       }
+  //     );
+  // }, [user?.email]);
 
   // LOAD HERE ALL GIGS
-  useEffect(() => {
-    axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/gigs`, configJson)
-      .then((res) => {
-        setAllGigs(res?.data?.result);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, [configJson]);
+  // useEffect(() => {
+  //   axios
+  //     .get(`${process.env.NEXT_PUBLIC_API_URL}/gigs`, configJson)
+  //     .then((res) => {
+  //       setAllGigs(res?.data?.result);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
   //logout email and pass
   const logOut = () => {

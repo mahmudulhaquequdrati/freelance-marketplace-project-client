@@ -15,7 +15,10 @@ const Banner = () => {
                 Get access to upcoming events, exclusive content, the latest and
                 greatest industry news, and more.
               </h5>
-              <button className="bg-green-500 border-2 hover:bg-orange-100 border-green-500 px-6 py-2 text-lg font-medium  transition-all duration-500 hover:text-green-500 text-white rounded-md ">
+              <button
+                className="bg-green-500 border-2 hover:bg-orange-100 border-green-500 px-6 py-2 text-lg font-medium  transition-all duration-500 hover:text-green-500 text-white rounded-md "
+                data-testid="sign-up-test"
+              >
                 Sign up now
               </button>
             </div>

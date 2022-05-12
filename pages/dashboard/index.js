@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import MainDashboard from "../../components/Dashboard/MainDashboard";
-import SideBar from "../../components/SideBar/SideBar";
+// import SideBar from "../../components/SideBar/SideBar";
 import SideBarMenu from "../../components/SideBar/SideBarMenu";
-import useAuth from "../../hooks/useAuth";
-import axios from "axios";
+// import useAuth from "../../hooks/useAuth";
+// import axios from "axios";
 
 const Dashboard = () => {
-  const [admin, setAdmin] = useState();
-  const [email, setEmail] = useState();
-  const { user, setIsOpen, isOpen } = useAuth();
+  // const [admin, setAdmin] = useState();
+  // const [email, setEmail] = useState();
+  // const { user, setIsOpen, isOpen } = useAuth();
 
   // useEffect(() =>{
   //   fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/admin/${email}`)
@@ -37,7 +37,7 @@ const Dashboard = () => {
         <div className="dashboard_position bg-[#00073d]">
           <div>
             {" "}
-            <SideBar />
+            {/* <SideBar /> */}
             <SideBarMenu />
           </div>
           <div>

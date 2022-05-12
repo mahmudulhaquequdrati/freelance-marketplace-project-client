@@ -1,11 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useRef, useState } from "react";
 import Link from "next/link";
-import { Grid, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/grid";
-import "swiper/css/pagination";
-import { BsBoxArrowInRight } from 'react-icons/bs';
+import { Grid } from "swiper";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
+import { BsBoxArrowInRight } from "react-icons/bs";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,12 +13,16 @@ const Categories = () => {
     <div className="container px-2 mx-auto py-8">
       <div className="flex items-center justify-between mb-5 border-b border-gray-[400]">
         <div>
-          <h3 className="text-[#2a3254] text-xl font-bold pb-5 border-b-2 border-orange-600">Browse Categories</h3>
+          <h3 className="text-[#2a3254] text-xl font-bold pb-5 border-b-2 border-orange-600">
+            Browse Categories
+          </h3>
         </div>
         <div>
           <h1 className="text-[#2a3254] text-xl hover:text-[#e83a3b] pb-5">
             <Link href="/gig_search">
-              <a className="flex items-center hover:text-[#e83a3b] font-bold transition-all duration-300 ease-linear">Explore All <BsBoxArrowInRight className="ml-2" /></a>
+              <a className="flex items-center hover:text-[#e83a3b] font-bold transition-all duration-300 ease-linear">
+                Explore All <BsBoxArrowInRight className="ml-2" />
+              </a>
             </Link>
           </h1>
         </div>
@@ -40,11 +43,8 @@ const Categories = () => {
             },
           }}
           spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
           modules={[Grid]}
-        // className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
+          // className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
         >
           <SwiperSlide>
             <div className="bg-[#f3e5c2] h-60 flex items-center justify-center shadow-lg flex-col text-center rounded-md">

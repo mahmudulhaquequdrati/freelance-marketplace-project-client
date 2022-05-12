@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 // import styles from "../../styles/Banner.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
+// import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 import Link from "next/link";
 import { motion } from "framer-motion";

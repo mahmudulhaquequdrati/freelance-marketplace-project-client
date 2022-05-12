@@ -12,6 +12,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [fixedMenu, setFixedMenu] = useState(false);
   const { user, logOut } = useAuth();
+  console.log(user);
   const gigs_button = "Gig's";
   // Scrolling Effect here
   useEffect(() => {

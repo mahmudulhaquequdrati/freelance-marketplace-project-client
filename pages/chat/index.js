@@ -24,6 +24,7 @@ const socket = io.connect("https://freelance-app-socket-server.herokuapp.com");
 
 function ChatApp() {
   const { user } = useAuth();
+  console.log(user);
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
 
@@ -232,7 +233,9 @@ function ChatApp() {
         <div className="chatBox">
           {currentChat ? (
             <div className="chatBoxWrapper">
-              <p className="chatWrapperP text-gray-700">Start Conversation</p>
+              <h3 className="chatWrapperP text-gray-700 text-md">
+                Start Conversation
+              </h3>
               <div className="chatBoxTop ">
                 {messages.map((m, i) => (
                   <div key={i} ref={scrollRef}>
