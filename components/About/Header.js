@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="py-4 md:py-0">
-      <div className="container mx-auto px-4">
+      <main className="container mx-auto px-4">
         <ul className="lg:flex justify-center text-base font-semibold">
           <div>
             <Link href="#">
@@ -17,7 +17,7 @@ const Header = () => {
             </Link>
           </div>
         </ul>
-      </div>
+      </main>
     </div>
   );
 };

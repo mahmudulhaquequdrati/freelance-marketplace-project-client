@@ -40,9 +40,7 @@ const Dashboard = () => {
             {/* <SideBar /> */}
             <SideBarMenu />
           </div>
-          <div>
-            <MainDashboard />
-          </div>
+          <div>{/* <MainDashboard /> */}</div>
         </div>
       </main>
     </section>

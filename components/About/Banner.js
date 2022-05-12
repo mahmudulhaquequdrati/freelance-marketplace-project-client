@@ -33,7 +33,10 @@ const Banner = () => {
         </div>
         <div className="px-8 py-24">
           <div>
-            <h2 className="sx:text-3xl text-5xl font-bold  text-white">
+            <h2
+              data-testid="About-Banner"
+              className="sx:text-3xl text-5xl font-bold  text-white"
+            >
               About Workfleek
               <br /> Why We Are Best?
             </h2>

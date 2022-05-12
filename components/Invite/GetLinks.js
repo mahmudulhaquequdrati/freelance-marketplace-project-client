@@ -1,7 +1,7 @@
 import { message } from "antd";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import {notification} from "antd";
+import { notification } from "antd";
 const GetLinks = () => {
   const [copied, setCopied] = useState(false);
 
@@ -63,13 +63,15 @@ const GetLinks = () => {
           {" "}
           <div>
             {" "}
-            <h4 className="text-xl  tracking-tighter">Your Invite Link</h4>{" "}
+            <h4 className="text-xl  tracking-tighter" data-testid="invite-link">
+              Your Invite Link
+            </h4>{" "}
             <div className="md:flex lg:flex gap-8">
               <div className="flex">
                 <input
                   className="appearance-none py-2 border block w-full md:w-80 lg:w-96  text-gray-700 border-gray-400 rounded px-4 border-r-0 rounded-r-none leading-tight focus:outline-none "
                   type="text"
-                  value="http://localhost:3000/"
+                  // value="http://localhost:3000/"
                 />
                 <button
                   className="appearance-none py-2 block w-24 text-gray-700 border rounded-l-none  rounded px-4  leading-tight focus:outline-none bg-gray-200 border-gray-500 focus:bg-gray-300 text-lg font-bold"
